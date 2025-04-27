@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <title>MAGASIN ajout d' article</title>
+   <meta charset="utf-8"/>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="logo.jpg">
+	</head>
+	<body>
+		<img src="logo.jpg">
+		<h2>MAGASIN XYZ</h2>
+		<nav >		
+		<a href="liste_produit.php" >Accueil</a>
+		<a href="rechLivres.html" >Rechercher</a>
+		<a href="insertion.html" >Ajouter</a>
+		<a href="rechAffichTab.html">Modif-affichage</a>
+		<a href="modifLivre.html">Modif-simple</a>		
+		<a href="authmain.php">MAGASIN</a> 
+		<a href = "librairie/cmd_all.php">Voir Toutes les Commandes</a>
+		
+		</nav>
+		
+	
+		
+		
+		<fieldset>
+    <legend>formulaire d'ajout </legend>
+   <form method="post" action ="insert.php">
+      <table>
+         <tr>
+            <td>NOM:</td>
+            <td><input type ="text" name ="nom" required = "required"></td>
+         </tr>
+         <tr>
+            <td>Entrer la catégorie :</td>
+            <td><input type ="text" name="categorie" required = "required"></td>
+         </tr>
+        
+         <tr>
+            <td>Entrer le stock :</td>
+            <td><input type ="number" name="stock" required = "required"></td>
+         </tr>
+         <tr>
+            <td>Entrer le prix unitaire :</td>
+            <td><input type="number" name="prix" required = "required"></td>
+         </tr>
+      </table>
+      <input type="submit" value="Enregistrer">
+</fieldset>
+   </form>
+
+</body>
+</html>

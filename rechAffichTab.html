@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="logo.jpg">
+	</head>
+	<body>
+	<img src="logo.jpg">
+	<h2>MAGASIN XYZ</h2>	
+		<nav >		
+		<a href="liste_produit.php" >Accueil</a>
+		<a href="rechLivres.html" >Rechercher</a>
+		<a href="insertion.html" >Ajouter</a>
+		<a href="rechAffichTab.html">Modif-affichage</a>
+		<a href="modifLivre.html">Modif-simple</a>		
+		<a href="authmain.php">MAGASIN</a> 
+		<a href = "librairie/cmd_all.php">Voir Toutes les Commandes</a>
+		
+		</nav>
+		
+		<fieldset>
+    <legend>recherche d'un livre a modifier</legend></legend>
+    <form action="rechAffichTab.php" method="POST" >
+   
+   <table>
+   <tr>
+     <td> <label for ="typeRech">Choisir le champ de recherche :</label></td>
+      <td><select id="typeRech" name="typeRech">
+         <option value="nom">Nom du produit</option>
+         <option value="categorie">Catégorie</option>
+         
+      </select>
+      </td>
+     </tr>
+     <tr>
+     <td> <label for ="termRech">
+     Entrer le terme de recherche :</label></td>
+     <td> <input id="termRech"type="text" name="termeRech" required = "required">
+      </td>
+      </tr>
+      </table>
+      <input type="submit" value="Rechercher">
+   </form>
+   </fieldset>
+   
+</body>
+</html>
+
+    

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="utf-8"/>
+   
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="logo.jpg">
+	</head>
+	<body>
+	<img src="logo.jpg">
+	<h2>Magasin XYZ</h2>
+		<nav >		
+		<a href="index.php" >Accueil</a>
+		<a href="rechLivre.html" >Rechercher</a>	
+		<a href="authmain.php">MAGASIN</a> 
+			<a href= "librairie/cmdclient.php">Vos commandes</a>
+		</nav>
+		
+			<fieldset>
+		<legend>recherche d'un article</legend>>	
+   <form action="resultclient.php" method="POST">
+   <table>
+   <tr>
+     <td> Choisir le champ de recherche :</td>
+      <td><select id="typeRech" name="typeRech">
+         <option value="nom">Nom du produit</option>
+         <option value="categorie">Catégorie</option>
+         
+      </select>
+      </td>
+     </tr>
+     <tr>
+     <td> Entrer le terme de recherche :</td>
+     <td> <input id="term" type="text" name="termeRech" required = "required">
+      </td>
+      </tr>
+      </table>
+      <input type="submit" value="Rechercher">
+   </form>
+   </fieldset>
+</body>
+</html>
